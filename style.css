@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    /*font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+html, body, textarea, #namelist, #winners, #drawer {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: 4px outset #8ac000;
+    border-radius: 10px;
+    color: #000;
+    background-color: #f3fa00;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+}
+
+button:active {
+    border-style: inset;
+}
+
+textarea {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFC;
+    border: 2px solid #237500;
+    border-radius: 20px;
+    resize: none;
+}
+
+#namelist, #winners {
+    display: block;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFC;
+    border: 2px solid #237500;
+    border-radius: 20px;
+	overflow: auto;
+}
+
+#draw {
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFC;
+    border: 2px solid #237500;
+    border-radius: 20px;
+}
